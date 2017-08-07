@@ -1,0 +1,10 @@
+version: '2'
+services:
+    clinicsystem-elasticsearch:
+        container_name: clinicsystem-elasticsearch
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/clinicSystem/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
